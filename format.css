@@ -4,6 +4,10 @@
 	text-align: center;
 }
 .imgscale {
-	width: 25%;
-	height: 25%;
+	width: 15%;
+	height: 15%;
+	float: left;
+}
+.paragraph {
+	clear: both
 }
