@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Homework 1A</title>
+	<meta name="description" content="first web page for Web App Development course at College of San Mateo by Jason Brewer">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="format.css">
+	<script src="jquery-4.0.0.min.js">
+	</script>
+	<script>
+		$(document).ready(function(){
+			$(".button").click(function(){
+				$("h1").animate({"font-size": "-=1rem"}, 3000);
+				$("h1").css("color","green");
+				var timer = setTimeout(function() {$("h1").css("color", "black")}, 5000);
+				var timer = setTimeout(function() {$("h1").animate({"font-size": "+=1rem"}, 3000)}, 5000);
+				$(".imgscale").css("outline","solid")
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+	  <div><h1 class="heading">Mobile Web App Development</h1></div>
+	</header>
+		<img src="images/20251111_142606.jpg" class="imgscale" alt="Myself">
+<p class="paragraph">
+		I'm Jason Brewer and I'm taking this class as a supplement to another course. I'm working to finish my associate's in graphic design and hope to finish this year.
+	</p>
+	<p>
+		The class I was originally going to take was Web Design II, however the class was canceled and as a result Im here taking this one.
+	</p>
+	<h2 class="heading">Technologies for this class</h2>
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	<h2 class="heading">Resources</h2>
+	<ul>
+		<li><a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools.com</a></li>
+		<li><a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">Validator</a></li>
+	</ul>
+<button class="button">Click Me</button>
+</body>
+</html>
